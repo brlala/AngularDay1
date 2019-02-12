@@ -10,6 +10,4 @@ export class AppComponent {
   subtitle: 'this is a subtitle';
   days: string[] =['day1','day2','day3'];
   cart: string[] = [];
-
-  clicked($event)
 }
