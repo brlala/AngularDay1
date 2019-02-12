@@ -1,0 +1,11 @@
+<h1
+  (mouseenter)="mouseEntered($event)"
+  (mouseleave)="mouseLeaved($event)">{{message}}</h1>
+<button type="button" (click)="buttonClicked($event)">{{message}}</button>
+<!--attribute binding in class-->
+
+<p>
+  <img class="round"
+       [src]="image"
+       alt="">
+</p>

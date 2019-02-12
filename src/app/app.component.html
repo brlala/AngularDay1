@@ -1,0 +1,29 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to First Angular Application - {{ title }}!
+  </h1>
+
+  <div *ngIf="!cart.length">
+    <h3>You have not been clicking</h3>
+  </div>
+
+  <div *ngIf="cart.length >1 ">
+
+  </div>
+  <app-pic
+    (onSelected)=""
+    *ngFor="let d of days; let i = index"
+    [message]="i+ d">
+  </app-pic>
+  <div *ngFor="let d of days; let i = index">
+    <div *ngIf="1==(i%2)">
+      I'm odd {{i}}
+    </div>
+    <div *ngIf="0==(i%2)">
+      I'm even {{i}}
+    </div>
+  </div>
+
+<router-outlet></router-outlet>
+</div>
